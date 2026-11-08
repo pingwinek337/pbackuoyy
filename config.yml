@@ -1,0 +1,26 @@
+# ============================================================
+#  PBackup - konfiguracja
+# ============================================================
+
+messages:
+  # Prefiks wiadomości na czacie (kody kolorów z użyciem &)
+  prefix: "&8[&6PBackup&8] &r"
+
+settings:
+  # Strefa czasowa używana do wyświetlania dat (np. Europe/Warsaw, UTC)
+  timezone: "Europe/Warsaw"
+
+  # Jeśli true - śmierci przy włączonym keepInventory nie są zapisywane
+  # (gracz nic wtedy nie traci, więc kopia zapasowa nie ma sensu).
+  skip-keep-inventory-deaths: true
+
+  # Czy przy nadawaniu kopii zapasowej przywracać też doświadczenie (XP)
+  restore-xp: true
+
+  # Sposób przywracania XP:
+  #   ADD - dodaje punkty doświadczenia z chwili śmierci do obecnego XP gracza (bezpieczne)
+  #   SET - ustawia XP gracza dokładnie na wartość z chwili śmierci
+  xp-mode: ADD
+
+  # Czy informować gracza na czacie, że otrzymał kopię zapasową
+  notify-target: true

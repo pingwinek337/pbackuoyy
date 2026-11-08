@@ -1,0 +1,27 @@
+name: PBackup
+version: '1.0.0'
+main: pl.pbackup.PBackup
+api-version: '1.21'
+description: Historia śmierci i kopie zapasowe ekwipunku graczy
+authors: [PBackup]
+
+commands:
+  pbackup:
+    description: Otwiera GUI historii śmierci i kopii zapasowych gracza
+    usage: /pbackup <nick_gracza>
+    permission: pbackup.use
+    permission-message: "§cNie masz uprawnień do wykonania tej komendy."
+
+permissions:
+  pbackup.use:
+    description: Dostęp do komendy /pbackup i głównego menu
+    default: op
+  pbackup.view:
+    description: Przeglądanie historii śmierci i podglądu ekwipunku
+    default: op
+  pbackup.give:
+    description: Nadawanie kopii zapasowych ekwipunku
+    default: op
+  pbackup.delete:
+    description: Usuwanie historii śmierci
+    default: op
